@@ -1,0 +1,12 @@
+int arrayMin(int arr[], int N){			//recursively finds smallest element in an int array
+	if(N == 1) return arr[0];
+	int x = arrayMin(arr, N-1);
+	if(arr[N-1] < x) return arr[N-1];
+	return x;
+}
+
+
+git add test.txt
+git commit -m "Test commit"
+git push origin master
+
