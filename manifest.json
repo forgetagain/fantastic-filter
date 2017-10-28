@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Word Filter",
+	
+	"description": "An extension that replaces words from a webpage with user-specified text.",
+	
+	"version": "1.0",
+	
+	"content_scripts": 
+		[
+			{
+				"matches": ["*://*/*"],
+				"js": ["filter.js"],
+				"run_at": "document_end"
+			}	
+		]
+	
+}
+	
+	
